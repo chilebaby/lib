@@ -11,3 +11,8 @@
             return moduleInstance;
           };
         }
+        
+        
+         var config = invokeLater('$injector', 'invoke', 'push', configBlocks);
+         
+         configBlocks[push](["$injector", "invoke", arguments]);
